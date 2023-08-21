@@ -1,6 +1,6 @@
 # Backend проекта movies-explorer
 
-URL: https://api.mesto.students.nomoredomains.xyz Публичный IP: 
+URL: https://api.mesto.students.nomoredomains.xyz Публичный IP: 51.250.20.77
 
 ## Использованные технологии
 
