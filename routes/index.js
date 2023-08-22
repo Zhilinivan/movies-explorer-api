@@ -7,11 +7,13 @@ const routeMovies = require('./movies');
 
 const routeSignup = require('./signup');
 const routeSignin = require('./signin');
+const routeSignout = require('./signout');
 
 const auth = require('../middlewares/auth');
 
 router.use('/', routeSignup);
 router.use('/', routeSignin);
+router.use('/', routeSignout);
 
 router.use(auth);
 
