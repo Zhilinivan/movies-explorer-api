@@ -51,7 +51,7 @@ const loginUser = (req, res, next) => {
 
 const logout = (req, res, next) => {
   try {
-    res.clearCookie('jwt').send({message: 'Вы успешно вышли из аккаунта'});
+    res.clearCookie('jwt').send({ message: 'Вы успешно вышли из аккаунта' });
   } catch (err) {
     next(err);
   }
@@ -75,7 +75,7 @@ const updateUserInfo = (req, res, next) => {
 
   User.findByIdAndUpdate(req.user._id, { name, email }, { new: true, runValidators: true })
     .orFail(new NotFoundError('Пользователь не найден.'))
-    .then((user) => res.send({ data: user }))
+    .then((user) => res.send(user))
     .catch(next);
 };
 
